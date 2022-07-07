@@ -1,0 +1,23 @@
+<view class="main">
+  <view class="poster">
+    <view class="title1">企业数字名片系统</view>
+    <view class="littleTitle1">企业数字身份管理专家</view>
+    <button class="button1">立即定制</button>
+    <image class="image1" src="https://image.mphdx.com/material/2022/07/05/457fc7cb2d6242e6a68670f31218475b.png"></image>
+  </view>
+  <view class="section1">
+    <view class="title2">数字名片给企业带来了什么?</view>
+    <view class="section1-mod1">
+      <text class="section1-text1">降本增效:</text>
+      <text class="section1-text2">1. 降低企业纸质名片及纸质宣传物料设计及印刷成本80%；\n 2. 批量制作分发名片，3分钟可制作1000张员工名片；\n 3. 数字名片实时修改更新，方便携带收藏，永不丢失；\n 4. 批量印刷名片，没有地域和时效限制，实时印刷配送；\n 5. 名片轨迹跟踪（谁访问谁收藏），实时查看名片发送量，收藏量，访问量，转发量等。</text>
+    </view>
+    <image class="image2" src="https://image.mphdx.com/material/2022/06/27/b2bbe263f0744b648303c97e1e787335.png"></image>
+    <view class=""></view>
+    <image class="image3" src="https://image.mphdx.com/material/2022/06/27/b2bbe263f0744b648303c97e1e787335.png"></image>
+    <view class="section1-mod1">
+      <text class="section1-text1">智能营销:</text>
+      <text class="section1-text2">1. 数字名片关联企业宣传自动跟踪访客，大数据智能测算销售线索；\n 2. 数字名片可以继承使用，只需修改名片信息让销售人员继承使用，发出去的名片永不丢失让客户不迷路；\n 3. 企业全员营销推广，实时抓取数据在微信及MICE生态建立企业自己的私域流量池；\n 4. 公司集中管理客户名片，员工端智能扫描识别上传云端，管理后台可授权员工共享客户资源；</text>
+    </view>
+
+  </view>
+</view>

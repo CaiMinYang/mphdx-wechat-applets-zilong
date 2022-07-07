@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "体验企业名片",
+  "usingComponents": {
+    "country-intl-selector": "/pages/country-intl-selector/country-intl-selector",
+
+    "authorizedModal": "/component/authorizedBox/authorizedBox"
+
+  }
+}

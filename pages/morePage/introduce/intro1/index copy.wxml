@@ -1,0 +1,337 @@
+<view class="page">
+  <view class="wrap4">
+    <view class="box1">
+      <view class="group9">
+        <text lines="1" class="group2">企业数字宣传系统</text>
+        <text lines="1" decode="true" class="word3">用&nbsp;数&nbsp;字&nbsp;赋&nbsp;能&nbsp;，让&nbsp;商&nbsp;务&nbsp;智&nbsp;能</text>
+      </view>
+      <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4b0375c685bf55e0ddd04f41261f7da88861f3ea3fd6e1189fa2d8d13fa12608" class="pic1"></image>
+    </view>
+    <text lines="1" class="word4">数字化宣传营销是什么？</text>
+    <text lines="1" class="word5">第一步触点数字化（线上和线下的数字化接触点）：</text>
+    <text lines="1" decode="true" class="word6">企业传统宣传推广方式通过发纸质宣传册、&nbsp;产品手册等，这些纸质的宣传物料把企业和客户形成物理接触点，&nbsp;这种物理接触点是弱连接，因为纸质的宣传物料大部分是被丢弃或遗失，也没有网络化传播，更不能智能化分析应用，所以要实现数字化营销转型，企业需要把传统纸质宣传物料数字化，&nbsp;通过数字化接触点走进客户的行为场景。</text>
+    <text lines="1" class="word7">第二步用户数字化（目标用户属性和行为数字化）：</text>
+    <text lines="1" decode="true" class="word8">企业数字化宣传物料通过线上线下网络化传播，获取典型目标用户的属性特征，行为特征(如浏览轨迹,浏览及行为偏好)，&nbsp;对访问用户进行画像，并进行标签化管理，对精准营销提供直接数据支撑。</text>
+    <text lines="1" class="word9">第三步打通数据链（用户数据在业务链中流动）：</text>
+    <text lines="1" class="txt2">通过数字化接触点获取用户画像数据，利用AI技术打通用户线上和线下的数据，让数据在价值链中流动，消除数据孤岛，打通企业商务应用核心流程各环节数据，让数据成为企业生产力。</text>
+    <view class="box2">
+      <view class="outer1">
+        <text lines="1" class="txt3">数字宣传系统给企业带来了什么？</text>
+        <view class="layer1">
+          <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb3e46c9c10630d2088396c17d59099f30d76ed5069ffa410592ee33c893813c5" class="pic2"></image>
+          <view class="layer2">
+            <text lines="1" class="info1">智能营销：</text>
+            <text lines="1" decode="true" class="infoBox1">1.&nbsp;数字宣传物料自动跟踪访客，大数据智能测算销售线索；\n2.&nbsp;数字宣传物料可以继承使用，让销售人员继承使用，发出去的物料永不丢失让客户不迷路；\n3.&nbsp;企业全员营销推广，实时抓取数据在微信及MICE生态建立企业自己的私域流量池；</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="box3">
+      <view class="group3">
+        <text lines="1" class="txt4">降本增效：</text>
+        <text lines="1" decode="true" class="paragraph1">1. 降低企业纸质宣传物料设计及印刷成本80%；\n2.&nbsp;数字宣传物料集中统一管理，实时修改更新，方便携带收藏，永不丢失；\n3.&nbsp;数字宣传物料轨迹跟踪（谁访问谁收藏），实时查看物料发送量，收藏量，访问量，转发量等&nbsp;；</text>
+      </view>
+      <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng643806708b885ce34c2e25fc492079f0761e8648378ee6b56cc18b5fb6909567" class="pic3"></image>
+    </view>
+    <view class="box4">
+      <view class="block2">
+        <text lines="1" class="word10">数字宣传系统给企业带来了什么？</text>
+        <view class="box5">
+          <view class="block3">
+            <view class="section1">
+              <view class="bd1">
+                <view class="bd2">
+                  <view class="box6"></view>
+                </view>
+                <text lines="1" class="word11">方便携带收藏</text>
+              </view>
+            </view>
+          </view>
+          <view class="block4">
+            <view class="mod1">
+              <view class="outer2">
+                <view class="main1">
+                  <view class="wrap1"></view>
+                </view>
+                <text lines="1" class="info2">实时轨迹追踪</text>
+              </view>
+            </view>
+          </view>
+          <view class="block5">
+            <view class="section2">
+              <view class="mod2">
+                <view class="box7">
+                  <view class="section3"></view>
+                </view>
+                <text lines="1" class="info3">实时更新修改</text>
+              </view>
+            </view>
+          </view>
+          <view class="block6">
+            <view class="box8">
+              <view class="box9">
+                <view class="box10">
+                  <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4e3a8066152668ea69d6846a54ee5e5cdd3aa9586f19ca3a1aa83c160f4af658" class="img1"></image>
+                </view>
+                <text lines="1" class="txt5">实时数据分析</text>
+              </view>
+            </view>
+          </view>
+          <view class="block7">
+            <view class="outer3">
+              <view class="group4">
+                <view class="main2">
+                  <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng33c6bab4292ee834a34130d84c049d2f834e9ffc4a75f03f62d269404339ea41" class="icon1"></image>
+                </view>
+                <text lines="1" class="word12">物料永不丢失</text>
+              </view>
+            </view>
+          </view>
+          <view class="block8">
+            <view class="wrap2">
+              <view class="layer3">
+                <view class="box11">
+                  <view class="section4"></view>
+                </view>
+                <text lines="1" class="word13">智能获取线索</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="info4">什么是企业数字宣传系统？</text>
+    <view class="box12">
+      <view class="outer4">
+        <view class="group5">
+          <view class="wrap3"></view>
+        </view>
+      </view>
+      <view class="outer5"></view>
+      <view class="outer6"></view>
+      <view class="outer7"></view>
+      <view class="outer8"></view>
+    </view>
+    <view class="box13">
+      <text lines="1" class="word14">PC管理后台</text>
+      <text lines="1" class="word15">实时创建，修改，维护企业数字宣传物料。管理业务员绩效，管理客户资源，使用数据分析…</text>
+    </view>
+    <view class="box14">
+      <text lines="1" class="word16">员工在手机端</text>
+      <text lines="1" decode="true" class="word17">自动领取公司数字宣传物料，分发给微信好友及朋友圈&nbsp;，线下通过扫码方式分发…</text>
+    </view>
+    <view class="box15">
+      <text lines="1" class="txt6">客户在手机端</text>
+      <text lines="1" class="info5">客查看收藏企业数字宣传物料，数字宣传物料自动保存到主页夹，永不丢失…</text>
+    </view>
+    <view class="box16">
+      <view class="box17">
+        <text lines="1" class="info6">企业数字宣传系统管理端（PC）</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7cceb1cf9b81bb881db9a3d27b496efb05630c0cb6bbc0fdab0873cef7ffcb0d" class="img2"></image>
+        <view class="box18">
+          <text lines="1" decode="true" class="txt7">数字宣传物料: </text>
+          <text lines="1" class="word18" />
+          <text lines="1" class="txt8">企业可以根据自己的需求自定义自己的公司数字化宣传物料样式及格式(图片，文字，视频，VR等文件格式)。</text>
+        </view>
+        <view class="box19">
+          <text lines="1" decode="true" class="word19">智能营销: </text>
+          <text lines="1" decode="true" class="word20">实时访客跟踪及数据分析，&nbsp;并建立用户画像，智能推测潜在客户。</text>
+        </view>
+        <view class="box20">
+          <text lines="1" class="word21">企业视频文档: </text>
+          <text lines="1" class="word22">企业视频及文档等集中统一管理使用，实时更新修改</text>
+        </view>
+        <view class="box21">
+          <text lines="1" class="word23">创建企业数字化宣传主页: </text>
+          <text lines="1" class="word24">企业主页，宣传主页，商城主页等并和名片绑定一起使用。</text>
+        </view>
+        <view class="box22">
+          <text lines="1" class="word54">物料继承: </text>
+          <text lines="1" decode="true" class="info7">&nbsp;数字宣传物料可以让业务员继承使用，永不丢失，让客户部迷路。</text>
+        </view>
+        <view class="box23">
+          <text lines="1" class="word25">业务员管理: </text>
+          <text lines="1" decode="true" class="txt10">企业可以设置多个业务员角色，每个业务员可以推广各自的宣传物料链接，获取属于自己的潜在客户线索。公司即可轻松管理业务员的&nbsp;营销推广业绩。</text>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="word26">企业数字宣传员工端（微信）</text>
+    <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngaa0fdac976a636154a2205383af5bec8f346c01bca19fdb537f7bace75cdd9b0" class="pic4"></image>
+    <view class="box24">
+      <text lines="1" class="info8">转发话术: </text>
+      <text lines="1" class="info9">可以设置自己的转发话术，实时和客户在线沟通交流，并对客户进行分类管理。</text>
+    </view>
+    <view class="box25">
+      <text lines="1" class="word27">营销分析: </text>
+      <text lines="1" class="word28">智能分析宣传物料不同页面的访问数据，并对客户访问数据进行多维度的分析，亦可业务人员推广业绩分析。</text>
+    </view>
+    <view class="box26">
+      <text lines="1" class="word29">一键转发: </text>
+      <text lines="1" class="info10">一键发送数字宣传物料给微信及企信好友，客户自动收藏永不丢失。或展示二维码让客户扫码收藏。</text>
+    </view>
+    <view class="box27">
+      <text lines="1" class="info11">访客追踪: </text>
+      <text lines="1" decode="true" class="txt11">自动跟踪访客，并对访客的行为进行标签管理，通过AI测算出潜在的客户线索，&nbsp;再对客户跟进管理。</text>
+    </view>
+    <view class="box28">
+      <view class="bd3">
+        <text lines="1" class="word30">企业数字宣传客户端（微信）</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb639422878f836b61b9a08014ce4633f860814f4a00460293d2d8074c4536ef0" class="pic5"></image>
+        <view class="bd4">
+          <text lines="1" class="word31">对接销售: </text>
+          <text lines="1" decode="true" class="word32">通过数字宣传物料快速定位到该企业销售人员&nbsp;。</text>
+        </view>
+        <view class="bd5">
+          <text lines="1" class="word33">查看物料: </text>
+          <text lines="1" decode="true" class="word34">&nbsp;查看查找企业数字宣传物料，方便快捷。</text>
+        </view>
+        <view class="bd6">
+          <text lines="1" class="info12">一键收藏: </text>
+          <text lines="1" decode="true" class="txt12">&nbsp;一键保存数字宣传物料到主页夹，永不丢失。</text>
+        </view>
+        <view class="bd7">
+          <text lines="1" class="word35">实时沟通: </text>
+          <text lines="1" class="word36">无需是微信好友的前提下，实时信息沟通交流。</text>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="txt13">数字宣传物料使用场景</text>
+    <view class="box29">
+      <view class="outer9"></view>
+      <text lines="1" class="word37">线上使用</text>
+      <view class="outer10"></view>
+    </view>
+    <view class="box30">
+      <view class="main3">
+        <text lines="1" class="word38">微信消息</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng526ca6abec0d50545f647cb225474eff173ac0ee0620ee54d56e7736fc90c824" class="img3"></image>
+      </view>
+      <view class="main4">
+        <text lines="1" class="info13">微信群</text>
+        <view class="main5"></view>
+      </view>
+      <view class="main6">
+        <text lines="1" class="word39">微信朋友圈</text>
+        <view class="group6"></view>
+      </view>
+    </view>
+    <view class="box31">
+      <view class="section5">
+        <text lines="1" class="word40">公众号文章</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng8ae9fa0dbe75419f70319a581df1e57d965cf4969d5aa1f0c0fd0cc086ac73b9" class="pic6"></image>
+      </view>
+      <view class="section6">
+        <text lines="1" class="info14">数字活动展会</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb89c4b64256a2aa90e82b70b2d886b885f92739a3dc85e9c244df8561a79cc5d" class="img4"></image>
+      </view>
+      <view class="section7">
+        <text lines="1" class="txt14">线上宣传物料</text>
+        <view class="bd8"></view>
+      </view>
+    </view>
+    <view class="box32">
+      <view class="layer4"></view>
+      <text lines="1" class="txt15">线下使用</text>
+      <view class="layer5"></view>
+    </view>
+    <view class="box33">
+      <view class="section8">
+        <text lines="1" class="txt16">纸质宣传册</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngd59a79983869bb1e3e765df799fb71709eb8c93b226219dc691005be1b5e758c" class="pic7"></image>
+      </view>
+      <view class="section9">
+        <text lines="1" class="word41">纸质名片</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng710176b0df553fbb4b6e97b2544bd7e9d61de8cd2a56bf1b89765acaf3385056" class="pic8"></image>
+      </view>
+      <view class="section10">
+        <text lines="1" class="word42">产品包装</text>
+        <view class="layer6"></view>
+      </view>
+    </view>
+    <view class="box34">
+      <view class="main7">
+        <text lines="1" class="txt17">纸质宣传物料</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5dc2234324ffd2bd9f0acdfd7eaec5d4bc93277868c2069698f8796fb0cf813b" class="img5"></image>
+      </view>
+      <view class="main8">
+        <text lines="1" class="word43">户外硬广</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5c8e3e70843e74f7099d962ab45898f9dbcad8a176ec5d03458419170c1abc85" class="pic9"></image>
+      </view>
+      <view class="main9">
+        <text lines="1" class="word44">线下活动展会</text>
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngccad234cb70523a6daa1536c83f2ecce5417dff6bacafff83f0a3c01a046552e" class="img6"></image>
+      </view>
+    </view>
+    <view class="box35">
+      <view class="outer21">
+        <text lines="1" class="info15">基于微信生态高效智能获客</text>
+        <view class="outer22">
+          <view class="outer11"></view>
+          <view class="outer12"></view>
+        </view>
+      </view>
+      <view class="block9">
+        <view class="layer9">
+          <view class="layer10">
+            <view class="group7">
+              <view class="outer13"></view>
+            </view>
+            <text lines="1" class="word45">带生态</text>
+            <text lines="1" class="info16">数字化宣传物料（小程序）基于微信10亿用户生态，同时打通了5亿MICE生态体系，便于传播及获客。</text>
+          </view>
+        </view>
+      </view>
+      <view class="layer11">
+        <view class="box36">
+          <view class="bd9">
+            <view class="main10"></view>
+          </view>
+          <text lines="1" class="word46">带流量</text>
+          <text lines="1" class="info17">企业全员营销转发微信好友、朋友圈、群、公众号等，可快速让你的生意伙伴、朋友、了解你们公司。</text>
+        </view>
+      </view>
+    </view>
+    <view class="box37">
+      <view class="bd10">
+        <text lines="1" class="word47">数字宣传物料可降低成本，提升业绩</text>
+      </view>
+      <view class="bd11">
+      </view>
+      <view class="bd12">
+      </view>
+      <view class="bd13">
+      </view>
+      <view class="bd14">
+      </view>
+      <view class="bd16">
+      </view>
+      <view class="bd17">
+      </view>
+    </view>
+    <view class="outer23">
+      <text lines="1" class="word55">立即前往体验</text>
+    </view>
+  </view>
+  <view class="block10">
+    <view class="block11">
+      <view class="outer19">
+        <view class="box38">
+          <view class="outer20"></view>
+        </view>
+        <text lines="1" class="word52">带雷达</text>
+        <text lines="1" class="txt20">实时追踪访客行为轨迹，智能分析挖掘精准客户，实现流量变现，转化为企业的商务数据和客户资产。</text>
+      </view>
+    </view>
+  </view>
+  <view class="block12">
+    <view class="block13">
+      <view class="main15">
+        <view class="main16">
+          <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngaa43391a97c7327ab049dab52290a81010eb807ca737d423d5a3fd114088509f" class="img9"></image>
+        </view>
+        <text lines="1" class="info18">带业绩</text>
+        <text lines="1" class="word53">访客数据成为企业的数据资产，实时分析业务员业绩，员工离职自动交接数据，企业再无后顾之忧。</text>
+      </view>
+    </view>
+  </view>
+</view>

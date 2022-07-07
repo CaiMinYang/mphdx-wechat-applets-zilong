@@ -1,0 +1,168 @@
+<import src="/pages/template/cardTemplate.wxml" />
+<!-- 有定制名片 -->
+<view class='myperson-card'>
+  <view wx:if="{{!loadCard}}">
+    <!-- 定制名片 -->
+    <card-intro wx:if="{{!hasVipCard}}"></card-intro>
+    <view wx:else>
+      <swiper class="vipBanner {{vipCardList.length==1?'':'pb4'}}" style="height:{{swiperHeight}}px;"
+        indicator-dots="{{vipCardList.length>0}}" current="{{currentTag}}" duration="500" bindchange="bindchanges">
+        <block wx:for="{{vipCardList}}" wx:key="id" wx:for-index="idx" wx:for-item="cell" data-idx="{{idx}}">
+            <swiper-item class="swiper-items" wx:if="{{cell.feeType==1}}">
+              <block wx:if="{{cell.type==1}}">
+                <view data-id="{{cell.id}}" bindtap="lookCardBrief">
+
+                  <template is="chinaTem{{cell.templateid}}" data="{{item:cell}}" />
+
+                </view>
+              </block>
+              <block wx:else>
+               <view data-id="{{cell.id}}" bindtap="lookCardBrief">
+                 <template is="englishTem{{cell.templateid}}" data="{{item:cell}}" />
+               </view>
+              </block>
+            </swiper-item>
+            <swiper-item class="swiper-items" wx:else>
+            <view class="swiper-items-inner" style="height:{{imgheight}}px;">
+              <view class="jiaoContainer" wx:if="{{cell.templateType!=1}}" catchtap="changeFace" data-index="{{idx}}">
+                <image src="/images/card/jiao@2x.png" class="jiao"></image>
+              </view>
+              <image data-id="{{cell.id}}" mode="widthFix" data-index="{{idx}}" data-vertical="{{cell.shapeType}}"
+                data-currentface="{{cell.currentFace}}" bindtap="lookVipCardBrief" class="cardImg"
+                src="{{cell.currentFace ? cell.imgFrontUrl : cell.imgBakcUrl}}">
+              </image>
+              <view class="typedetail" data-id="{{cell.id}}" data-vertical="{{cell.shapeType}}"
+                data-currentface="{{cell.currentFace}}" data-index="{{idx}}" bindtap="lookVipCardBrief"
+                wx:if="{{cell.shapeType==2}}">查看详情</view>
+            </view>
+          </swiper-item>
+        </block>
+        <swiper-item class="swiper-items" wx:if='{{mycardTotal<8}}'>
+          <view class="card-only-banner">
+            <template is="chinaTem0" />
+          </view>
+        </swiper-item>
+      </swiper>
+
+      <view class="pj-varte-btn-wrap">
+        <button class="to-give-carte" open-type="share" disabled="{{currentTag === vipCardList.length}}" style="background:{{color}}">递名片</button>
+      </view>
+      <view class="has-carte-get" wx:if="{{no_receive}}" bindtap="claimCard">
+        <image class="notice" src="/images/tmp/notice.png"></image>
+        <text class="text">您有{{no_receive}}张未认领的名片，点击认领>></text>
+      </view>
+      <view wx:if="{{!isPerson}}">
+        <view class="pj-action">
+          <view class="pj-action-item" bindtap="toResource">
+            <image class="pj-action-img" src="/images/tmp/12.png"></image>
+            <text class="pj-title">客户名片</text>
+            <text class="pj-desc">企业客户资源库</text>
+          </view>
+          <view class="pj-action-item" bindtap="seeComPage">
+            <image class="pj-action-img" src="/images/tmp/1.png"></image>
+            <text class="pj-title">数字宣传</text>
+            <text class="pj-desc">查看关联数字主页</text>
+          </view>
+          <view class="pj-action-item" bindtap="toinvoice">
+            <image class="pj-action-img" src="/images/tmp/2.png"></image>
+            <text class="pj-title">发票抬头</text>
+            <text class="pj-desc">查看关联发票抬头</text>
+          </view>
+        </view>
+        <view class="pj-action">
+          <view class="pj-action-item" bindtap="toScan">
+            <image class="pj-action-img" src="/images/tmp/10.png"></image>
+            <text class="pj-title">拍名片</text>
+            <text class="pj-desc">拍下名片并收藏</text>
+          </view>
+          <view class="pj-action-item" bindtap="toPrint">
+            <image class="pj-action-img" src="/images/tmp/5.png"></image>
+            <text class="pj-title">名片图片</text>
+            <text class="pj-desc">在线印刷名片配送</text>
+          </view>
+          <view class="pj-action-item" bindtap="toColleague">
+            <image class="pj-action-img" src="/images/tmp/11.png"></image>
+            <text class="pj-title">同事名片</text>
+            <text class="pj-desc">企业成员名片夹</text>
+          </view>
+        </view>
+        <view class="pj-action" style="padding-bottom: 84px;">
+          <view class="pj-action-item" bindtap="cardcode">
+            <image class="pj-action-img" src="/images/tmp/4.png"></image>
+            <text class="pj-title">名片码</text>
+            <text class="pj-desc">生成名片二维码</text>
+          </view>
+          <view class="pj-action-item" bindtap="editCard">
+            <image class="pj-action-img" src="/images/tmp/3.png"></image>
+            <text class="pj-title">名片编辑</text>
+            <text class="pj-desc">修改名片信息</text>
+          </view>
+          <view class="pj-action-item" bindtap="claimCard">
+            <image class="pj-action-img" src="/images/tmp/8.png"></image>
+            <text class="pj-title">认领名片</text>
+            <text class="pj-desc">认领多张名片</text>
+          </view>
+        </view>
+      </view>
+      <view wx:else>
+          <view class="pj-action">
+            <view class="pj-action-item" bindtap="zoomInCard">
+              <image class="pj-action-img" src="/images/tmp/4.png"></image>
+              <text class="pj-title">名片码</text>
+              <text class="pj-desc">生成名片二维码</text>
+            </view>
+            <view class="pj-action-item" bindtap="editCard">
+              <image class="pj-action-img" src="/images/tmp/3.png"></image>
+              <text class="pj-title">名片编辑</text>
+              <text class="pj-desc">修改名片信息</text>
+            </view>
+            <view class="pj-action-item" bindtap="shareCircleFriends">
+              <image class="pj-action-img" src="/images/tmp/5.png"></image>
+              <text class="pj-title">名片图片</text>
+              <text class="pj-desc">在线印刷名片配送</text>
+            </view>
+          </view>
+          <view class="pj-action">
+            <view class="pj-action-item" bindtap="claimCard">
+              <image class="pj-action-img" src="/images/tmp/8.png"></image>
+              <text class="pj-title">认领企业名片</text>
+              <text class="pj-desc">认领多张企业名片</text>
+            </view>
+            <view class="pj-action-item" bindtap="showmfsy">
+              <image class="pj-action-img" src="/images/tmp/13.png"></image>
+              <text class="pj-title">体验企业名片</text>
+              <text class="pj-desc">体验企名片员工端</text>
+            </view>
+            <view class="pj-action-item" bindtap="startCards">
+              <image class="pj-action-img" src="/images/tmp/15.png"></image>
+              <text class="pj-title">企业免费试用</text>
+              <text class="pj-desc">使用企名片管理端</text>
+            </view>
+          </view>
+          <view class="pj-action" style="padding-bottom: 84px;">
+            <view class="pj-action-item" bindtap="bindswia1">
+              <image class="pj-action-img" src="/images/tmp/14.png"></image>
+              <text class="pj-title">数字名片系统</text>
+              <text class="pj-desc">了解企业数字名片</text>
+            </view>
+            <view class="pj-action-item" bindtap="bindswia2">
+              <image class="pj-action-img" src="/images/tmp/1.png"></image>
+              <text class="pj-title">数字宣传系统</text>
+              <text class="pj-desc">了解企业数字宣传</text>
+            </view>
+            <view class="pj-action-item" bindtap="startCom">
+              <image class="pj-action-img" src="https://image.mphdx.com/material/2022/07/07/3897e30e4f2c4801b2cfdce3e90059d8.png"></image>
+              <text class="pj-title">企业LinkTree</text>
+              <text class="pj-desc">企业数字身份管理</text>
+            </view>
+          </view>
+        </view>
+      <view style="opacity:0">{{lointoData}}</view>
+
+      <view class="pj-buhied" wx:if="{{lointoData==1}}">
+        <view class="pj-buhied-txt"><view class="pj-buhied-th">!</view> 您有试用名片即将过期</view>
+        <button class="pj-buhied-btn" bindtap="noworde">停止试用</button>
+      </view>
+    </view>
+	</view>
+</view>

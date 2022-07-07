@@ -1,0 +1,6 @@
+<block wx:for="{{list}}" wx:key="index">
+  <view class="item" bindtap="openmap" data-index="{{index}}">
+    <text class="txt">{{item.name || item.remark || ''}}</text>
+    <image class="img-arrow" src="/images/activity/ic_arrows.png" alt="" />
+  </view>
+</block>

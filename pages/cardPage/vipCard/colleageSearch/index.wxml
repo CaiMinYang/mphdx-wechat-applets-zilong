@@ -1,0 +1,65 @@
+<view class="card-tab-case fn-cb" bindtap='hideFabsModal'>
+  <view class="search-card">
+    <view class="search-bot">
+      <image src="/images/card/icon-card-search.png"></image>
+      <input class="input" type="text"  bindinput="bindinput" placeholder="搜索同事名片"></input>
+    </view>
+  </view>
+</view>
+
+<view class="list scroll-box" bindtap="hideFabsModal">
+  <block wx:for="{{dataList}}" wx:key="idx" wx:for-index="idx" wx:for-item="cell">
+    <view class='sort-letter' wx:if="{{idx==0}}">{{cell.py}}</view>
+    <block wx:else>
+      <view class='sort-letter' wx:if='{{dataList[idx-1].py!=cell.py}}'>{{cell.py}}</view>
+    </block>
+    <view class="list-item {{collectCard_click_index==(idx+cell.py)?'item-bg':''}}" data-cardid="{{cell.id}}"
+      data-username="{{cell.username}}" data-userid="{{cell.userid}}" data-feetype="{{cell.feeType}}" bindtap="lookCard"
+      data-shapetype="{{cell.shapeType}}">
+      <view class="avatar">
+        <!--判断是扫描的名片还是电子档的名片-->
+        <block wx:if="{{cell.scanphoto}}">
+          <image src="{{cell.scanphoto}}" mode="scaleToFill"></image>
+        </block>
+        <block wx:else>
+          <!--优先选择公司logo 其次选择公司名称带出的logo  最后选择用户头像-->
+          <block wx:if="{{cell.companylogo}}">
+            <image src="{{cell.companylogo}}" mode="scaleToFill"></image>
+          </block>
+          <block wx:elif="{{cell.defaultcomplogo}}">
+            <image src="{{cell.defaultcomplogo}}" mode="scaleToFill"></image>
+          </block>
+          <block wx:else>
+            <image src="{{cell.logo?cell.logo:'/images/more/self-headicon.jpg'}}" mode="scaleToFill"></image>
+          </block>
+        </block>
+      </view>
+      <view class="userbrief">
+        <view class="username">{{cell.username}}<image wx:if="{{cell.feeType==2}}" src="/images/vip.png"
+            style="width:12px;height:12px;margin-left:6px;"></image>
+        </view>
+        <text class="position" wx:if="{{cell.position}}">{{cell.position}}</text>
+        <text class="comname">{{cell.companyname}}</text>
+      </view>
+      <view class="list-right {{collectCard_click_index==idx?'list-right-index':''}}">
+        <view catchtap='bindShowFabs' data-type='2' data-index='{{idx}}'>
+          <image src='/images/more/card-more.png' class='fabs-card-more'></image>
+        </view>
+        <view class='fabs-list {{collectCard_click_index==idx?"fabs-fadeIn":"fabs-fadeOut"}}'>
+          <view class='fabs-item' data-latitude='{{cell.latitude}}' data-longitude='{{cell.longitude}}'
+            data-address='{{cell.companyaddress}}' catchtap='bindNavigation'>
+            <image src="/images/more/icon-navigation.png"></image>
+          </view>
+          <view class='fabs-item' data-call="{{cell.mobile}}" catchtap='bindPhoneCall'>
+            <image src="/images/more/icon-phone.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="no-data-wrapper" wx:if="{{dataList.length==0}}">
+    <!-- <image class="no-data" src="/images/more/ion-not-opened.png"></image> -->
+    <text class="no-text">暂无数据</text>
+  </view>
+</view>

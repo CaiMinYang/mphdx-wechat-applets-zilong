@@ -1,0 +1,82 @@
+<view class="header">
+    <view class="head-hd">AI企业主页</view>
+    <view class="head-desc">赋能企业传统宣传物料数字化</view>
+    <image class="img" mode="widthFix" src="https://file.mphdx.com/2021/02/04/783bcef0ee7940118d2ec5894486dc40.png"
+        alt="img"></image>
+    <view class="text">
+        传统宣传+数字化=AI企业主页，AI企业主页是通过将企业传统宣传物料数字化，代替传统宣传（纸质名片、宣传册、产品手册、海报、线下展厅等）。营销雷达及AI分析工具帮助企业销售提升获客能力，通过客户访问率智能测算给销售挖掘出高度意向客户，助力商机进一步转化。线上获客神器：微信消息、微信群、微信朋友圈、公众号、线上活动会展等。线下营销连接器：展会、会销、博览会、活动会议、线下广告、线下拜访等
+    </view>
+</view>
+<view class="section section1">
+    <view class="head-hd">AI企业主页</view>
+    <view class="head-desc">实时更新全面提升企业营销推广</view>
+    <image class="img" mode="widthFix" src="https://file.mphdx.com/2021/02/04/2b41d1c3aa8442609d2ef3c855d286fb.png"
+        alt="img"></image>
+    <view class="desc">
+        公司简介：迅速了解公司品牌与发展历史
+    </view>
+    <view class="desc">
+        公司产品：展示公司产品服务，精准推广
+    </view>
+    <view class="desc">
+        企业快讯：了解公司最新动态，实时互动
+    </view>
+    <view class="desc">
+        VR展览厅：线下场景线上呈现，线上展览
+    </view>
+    <view class="desc">
+        企业直播：让每家企业都拥有自己的直播间
+    </view>
+</view>
+<view class="section section2">
+    <view class="head-hd">营销雷达</view>
+    <view class="head-desc">实时追踪访客高效智能获客</view>
+    <image class="img" mode="widthFix" src="https://file.mphdx.com/2021/02/04/ad737c9db9374f7aa0769120bfe81705.png"
+        alt="img"></image>
+    <view class="desc">
+        访客追踪：客户访问轨迹精准探测，实时跟踪交流
+    </view>
+    <view class="desc">
+        销售线索：客户访问轨迹智能分析，获取意向客户
+    </view>
+    <view class="desc">
+        客户跟进：客户分类管理，重要客户及时跟进转化
+    </view>
+</view>
+<view class="section section3">
+    <view class="head-hd">AI分析</view>
+    <view class="head-desc">实时更新全面提升企业营销推广</view>
+    <image class="img" mode="widthFix" src="https://file.mphdx.com/2021/02/04/39cb36f9c80e4e25962220e1ae856069.png"
+        alt="img"></image>
+    <view class="desc">
+        主页分析：客户访问页面用户画像，一目了然
+    </view>
+    <view class="desc">
+        推广分析：客户访问数据精准统计，助力销售
+    </view>
+    <view class="desc">
+        业绩分析：企业员工销售业绩排名，有效管理
+    </view>
+</view>
+<view class="section section4">
+    <view class="head-hd">数字化宣传物料</view>
+    <view class="head-desc">解决企业经营中的营销推广难题</view>
+    <view class="img-box">
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/ac23e5ac582e4c2fb8ec7a4c298686ce.png"
+            alt="数字化宣传物料"></image>
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/70f2c446e4fa430e85ee1ee32c6b8c9f.png"
+            alt="数字化宣传物料"></image>
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/047500512f914e69aa898b83c631afb4.png"
+            alt="数字化宣传物料"></image>
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/662e5a10e8c648e9a6fccdf9f97f3af8.png"
+            alt="数字化宣传物料"></image>
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/28f661ae456c4cd78c3dd5b3cdebb712.png"
+            alt="数字化宣传物料"></image>
+        <image class="imgs" mode="widthFix" src="https://file.mphdx.com/2021/02/04/e91557a800e04606b5772ee37e89fabb.png"
+            alt="数字化宣传物料"></image>
+    </view>
+    <view class="btn-area">
+        <view class="to-com" bindtap="bindBtnCreate">立即前往
+        </view>
+    </view>
+</view>

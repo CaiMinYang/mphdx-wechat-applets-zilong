@@ -1,0 +1,241 @@
+<block wx:if="{{cardList}}">
+  <view class="page-bodys {{skiptype!=0||userid!=creatorid?'pds':''}}">
+    <view class="cater-img-wrap">
+      <view class="cater-img-inner">
+        <!-- 判断单面双面 -->
+        <block wx:if="{{cardList.sideType === 1}}">
+          <image class="vipCard" src="{{cardList.frontImgUrl}}" mode="widthFix"></image>
+        </block>
+        <block wx:else>
+          <view class="jiaoContainer" wx:if="{{cardList.backImgUrl&&cardList.backImgUrl!='-1'}}" catchtap="changeFace">
+            <image src="/images/card/jiao@2x.png" class="jiao"></image>
+          </view>
+          <block wx:if="{{currentFace == 1}}">
+            <image class="vipCard" data-src="{{cardList.frontImgUrl}}" bindtap="previewImg" src="{{cardList.frontImgUrl}}" mode="widthFix"></image>
+            <!-- <image class="vipCard" data-src="{{cardList.frontImgUrl}}" bindtap="previewImg"
+              src="{{cardList.frontImgUrl}}" mode="heightFix"></image> -->
+          </block>
+          <block wx:else>
+            <image class="vipCard" data-src="{{cardList.backImgUrl}}" bindtap="previewImg" src="{{cardList.backImgUrl}}" mode="widthFix"></image>
+            <!-- <image class="vipCard" data-src="{{cardList.backImgUrl}}" bindtap="previewImg" src="{{cardList.backImgUrl}}"
+              mode="heightFix"></image> -->
+          </block>
+        </block>
+      </view>
+    </view>
+    <view class="bottom-box">
+      <view class="contact-ways fn-cb">
+        <view class="contact-item vipItem" data-call="{{mobile}}" bindtap="bindPhoneCall">
+          <view class="h20">
+            <iconfont class="iconFont" name="dh1" color="{{color}}" size="32" style="margin-right: 10rpx;" />电话
+          </view>
+        </view>
+        <view class="contact-item vipItem" bindtap="openMap">
+          <view class="h20">
+            <iconfont class="iconFont" name="dizhix" color="{{color}}" size="32" style="margin-right: 10rpx;" />导航
+          </view>
+        </view>
+        <!--判断当前名片是否能分享-->
+        <block wx:if="{{creatorid!=userid && canshare==0}}">
+          <view class="contact-item vipItem" style="opacity:0.6;">
+            <button class='btn-share vipItem'>
+              <iconfont class="iconFont" name="fenxinag" color="{{color}}" size="32" style="margin-right: 10rpx;" />分享
+            </button>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="contact-item vipItem">
+            <button open-type="share" class='btn-share vipItem'>
+              <iconfont class="iconFont" name="fenxinag" color="{{color}}" size="32" style="margin-right: 10rpx;" />分享
+            </button>
+          </view>
+        </block>
+      </view>
+      <!--自己从分享查看自己名片 -->
+      <view class='card-tab-bottom flex-wrp' wx:if="{{userid==creatorid&&skiptype==1}}">
+        <view class="tab-wrap">
+          <button class="to-give-carte" open-type="share" style="background:{{color}}">递名片</button>
+        </view>
+      </view>
+      <!--判断当前名片是否为自己创建的 自己创建的分为电子档和扫描上传-->
+      <block wx:elif="{{userid!=creatorid}}">
+        <!--分享到朋友圈之后别人查看的界面-->
+        <block wx:if="{{skiptype==1 || skiptype==10}}">
+          <block wx:if="{{cardList.isvalid!=0}}">
+            <view class='card-tab-bottom flex-wrp'>
+              <view class="tab-wrap">
+                <view class="cloud" bindtap="saveInfo">
+                  <!-- <iconfont class="iconFont" name="cloud" color="{{color}}" size="64" style="margin-right: 10rpx;" /> -->
+                  <image src="/images/card/cloud-1.png" class="cloud-img"></image>
+                  <view class="cloud-text">存通讯录</view>
+                </view>
+
+                <button type="button" class='tab-folder' style="color:{{color}};border-color:{{color}};" data-type="2" bindtap="openCardCase">我的名片夹</button>
+                <!-- 是否选中了名片并回递即分享功能 -->
+                <block wx:if="{{cardCount!=0}}">
+                  <button class='tab-create' bindtap='noCard' style="background:{{color}}">回递名片</button>
+                  <!-- <button class='tab-create' data-type='giveCard' style="background:{{color}}"
+                    open-type="share">回递名片</button> -->
+                </block>
+                <block wx:else>
+                  <button type="button" class='tab-create' bindtap='bindGiveCard' style="background:{{color}}">创建名片</button>
+                </block>
+              </view>
+            </view>
+          </block>
+        </block>
+        <block wx:elif='{{skiptype==2 || skiptype==4}}'>
+          <!--管对方有没有我的名片  只要swaped不等于1  就要提示交换-不-->
+          <block wx:if="{{cardList.collected==0}}">
+            <!-- isHide==1 表示对方名片字段隐藏-->
+            <block wx:if="{{isHide==1}}">
+              <block wx:if="{{cardList.swaped==1}}">
+                <view class="edit-wrap">
+                  <view class='card-btn card-bg card-disabled'>等待对方同意</view>
+                </view>
+              </block>
+              <block wx:else>
+                <form bindsubmit="bindSwapCard" report-submit="true">
+                  <view class="edit-wrap">
+                    <button class='card-btn card-bg' bindtap="swapCard">申请交换名片</button>
+                  </view>
+                </form>
+              </block>
+            </block>
+            <block wx:else>
+              <view class="edit-wrap">
+                <view class="card-btn card-border collect-card" data-type="1" bindtap="collectCard" style="color:{{color}};border-color:{{color}};">收藏到名片夹</view>
+              </view>
+            </block>
+          </block>
+          <block wx:elif="{{cardList.collected==1}}">
+            <view class="edit-wrap">
+              <view class="card-btn card-border delete-card" data-type="2" bindtap="openCardCase" style="color:{{color}};border-color:{{color}};">已保存到名片夹，点击进入</view>
+            </view>
+          </block>
+        </block>
+        <block wx:elif="{{skiptype==3}}">
+          <block wx:if='{{cardList.collected==1}}'>
+            <view class="edit-wrap">
+              <view class="card-btn card-border delete-card" data-type="2" bindtap="openCardCase" style="color:{{color}};border-color:{{color}};">已保存到名片夹，点击进入</view>
+            </view>
+          </block>
+          <block wx:if="{{selectTab==1 && cardList.collected==0}}">
+            <view class="edit-wrap">
+              <button class='btn-left-ignore' catchtap='ignoreCard'>忽略</button>
+              <button class='btn-right-receive' catchtap='receiveCard'>通过交换</button>
+            </view>
+          </block>
+          <block wx:else>
+            <block wx:if='{{cardStatus==-1 || cardStatus==0}}'>
+              <view class="edit-wrap">
+                <button class='btn-receive' catchtap='receiveCard'>通过交换</button>
+              </view>
+            </block>
+          </block>
+        </block>
+        <block wx:elif="{{skiptype==6}}">
+          <view class="edit-wrap">
+            <button class="to-give-carte" open-type="share" style="background:{{color}}">转发名片</button>
+          </view>
+        </block>
+        <block wx:else>
+          <!--从搜索界面进来-->
+          <block wx:if="{{cardList.collected==0}}">
+            <view class="edit-wrap">
+              <view class="card-btn card-border collect-card" data-type="1" bindtap="collectCard" style="color:{{color}};border-color:{{color}};">收藏到名片夹</view>
+            </view>
+          </block>
+          <block wx:else>
+            <view class="edit-wrap">
+              <view class="card-btn card-border delete-card mp-delete" data-type="2" bindtap="deleteCard" style="color:{{color}};border-color:{{color}};">取消收藏</view>
+              <view class="card-btn card-border delete-card mp-fzs" data-type="2" bindtap="cardGroup" style="background:{{color}};border-color:{{color}};">名片分组</view>
+
+            </view>
+          </block>
+        </block>
+      </block>
+    </view>
+
+    <view class="detail-fields  {{canSee?'ishide':''}}">
+      <view class="fields-box {{canSee?'ishide':''}}">
+        <view class="com-page com-page2" wx:if="{{comPageList.length}}" bindtap="seeComPage">
+          <view class="see-left">
+            <iconfont class="iconFont" name="gl" color="{{color}}" size="32" style="margin-right: 10rpx;" />
+            <text>查看该公司的企业主页</text>
+            <image src="/images/comvip.png" class="comvip"></image>
+          </view>
+        </view>
+        <view class="com-page" bindtap="seeComPage" wx:else>
+          <view class="see-left">
+            <iconfont class="iconFont" name="gl" color="{{color}}" size="32" style="margin-right: 10rpx;" />
+            <text>查看该公司的企业主页</text>
+            <image src="/images/comvip.png" class="comvip"></image>
+          </view>
+          <image src="/images/activity/ic_arrows.png" class="img-arrow" alt="arrow"></image>
+        </view>
+
+
+        <!-- 名片字段显示 -->
+        <view class="carte-info-detail">
+          <view class="info-item" wx:for="{{fields}}" wx:key="idxs" wx:for-item="item" wx:for-index="idxs">
+            <view class="first-letter" style="background:{{detailSkin}}">
+              {{item.at1}}
+            </view>
+            <block wx:if="{{item.field.dataType == 1}}">
+              <view class="info-wrap">
+                <text class="info-title">{{item.viewName}}</text>
+                <text class="info-desc" bindtap='setClipboardData' data-content="{{item.val}}">{{item.val}}</text>
+              </view>
+            </block>
+            <block wx:else>
+              <view class="info-wrap info-img">
+                <text class="info-title">{{item.viewName}}</text>
+                <image class="info-imgs" bindtap="previewImg" src="{{item.val}}" data-src="{{item.val}}" v-if="{{item.val}}"></image>
+              </view>
+            </block>
+            <!-- <block wx:if="{{idxs==0}}">
+              <view class="cloud" bindtap="saveInfo">
+                <iconfont class="iconFont" name="cloud" color="{{color}}" size="64" style="margin-right: 10rpx;" />
+              </view>
+            </block> -->
+          </view>
+        </view>
+        <auth-view wx:if="{{skiptype==1&&userid!=creatorid}}"></auth-view>
+      </view>
+      <view class="edit-wrap {{canSee?'ishide':''}}" wx:if="{{userid==creatorid}}">
+        <button class="edit-btn" bindtap="editCard" style="background:{{color}};">编辑名片</button>
+      </view>
+      <view class="see-info {{canSee?'ishide':''}}" bindtap="seeinfo">
+        <iconfont class="iconFont" name="shangla" color="{{color}}" size="32" />
+      </view>
+    </view>
+    <view class="xiala" bindtap="seeinfo" wx:if="{{canSee}}">
+      <iconfont class="iconFont" name="xiala" color="{{color}}" size="32" />
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="no-cardlist">Sorry,您所查看的名片已被删除!</view>
+</block>
+
+<view class="body-view">
+  <loading hidden="{{hidden}}">
+    请稍后...
+  </loading>
+</view>
+
+<view class="modal-wrap" hidden='{{swapHidden}}'>
+  <view class="modal-body">
+    <view class="modal-tip-content modal-content">
+      <view class='modal-tip'>{{swapText}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 留言 -->
+<leave-word wx:if="{{userid!=creatorid}}" color="{{color}}" bind:leaveWord="bindLeaveWord"></leave-word>
+
+<authorizedModal modal-hidden="{{is_authorized}}" bind:refreshEvent="_refreshEvent" />
+<!-- 申请交换提示框,仅提示一次 -->
+<cardswapModal modal-hidden="{{is_tipcardswap}}" bind:closeEvent="_closeSwapTipEvent" />

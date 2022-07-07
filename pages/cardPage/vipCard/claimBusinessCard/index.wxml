@@ -1,0 +1,14 @@
+<view>
+  <view class="topContainer">
+    <image class="topImage" src="https://file.mphdx.com/2021/06/16/6da3cbea334f4a7bb909f13139342fbe.png"></image>
+    <view class="testPhone">验证手机号</view>
+    <view class="testPhone">认领企业定制的名片</view>
+    <view class="desc mt40">
+      <text>认领后即可使用</text>
+      <text class="blue">统一样式的企业定制名片</text>
+    </view>
+    <view class="desc">线上线下，形成基于名片社交的SCRM</view>
+  </view>
+  <view class="claimNow" bindtap="claimNow">立即认领</view>
+  <button open-type="share" class="recommend">推荐给HR</button>
+</view>

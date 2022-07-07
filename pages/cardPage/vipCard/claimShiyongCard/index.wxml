@@ -1,0 +1,27 @@
+<view>
+  <view class="topContainer">
+    <image class="topImage" src="https://file.mphdx.com/2021/06/16/6da3cbea334f4a7bb909f13139342fbe.png"></image>
+  </view>
+  <view class="tel-vue">
+    <view class="phoneContainer">
+    <view class="phone">
+      <view class="name">手机号</view>
+      <view style="min-width: 60rpx; padding-right: 10rpx;margin-right: 10rpx;border-right: 1px solid #ccc;" bind:tap="showCountryIntlSelector">+{{countryCode}}</view>
+
+      <input class="phoneInput" type="number" placeholder="请输入手机号" placeholder-class="placeholder-class" bindinput="getPhone" />
+    </view>
+    <view class="phone">
+      <view class="name">验证码</view>
+      <input class="phoneInput" type="number" maxlength="6" placeholder="请输入验证码" placeholder-class="placeholder-class" bindinput="getCodeVal" />
+      <view class="code" wx:if="{{!wait}}" bindtap="getCode">获取验证码</view>
+      <view class="code" wx:else>{{seconds}}s后重新获取</view>
+    </view>
+  </view>
+  </view>
+  <view class="claimNow" bindtap="showmfsy">试用企业名片</view>
+  <button open-type="share" class="recommend">推荐给朋友</button>
+</view>
+
+<country-intl-selector bindonchange="onChange" model:value="{{countryCode}}" model:visible="{{visible}}"></country-intl-selector>
+
+<authorizedModal modal-hidden="{{is_authorized}}" bind:refreshEvent="_refreshEvent" />

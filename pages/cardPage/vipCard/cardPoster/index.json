@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText":"名片海报",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "authorizedModal": "/component/authorizedBox/authorizedBox"
+  }
+}

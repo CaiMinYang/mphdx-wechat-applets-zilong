@@ -1,0 +1,34 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.icons {
+  padding-top: 60rpx;
+  text-align: center;
+}
+
+.icons image {
+  width: 328rpx;
+  height: 266rpx;
+}
+
+.desc {
+  color: #666666;
+  font-size: 28rpx;
+  padding: 0 90rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.recommend {
+  width: 384rpx;
+  height: 88rpx;
+  background-color: #1B85D5;
+  margin: 164rpx auto 0;
+  text-align: center;
+  line-height: 88rpx;
+  color: #FFFFFF;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+}

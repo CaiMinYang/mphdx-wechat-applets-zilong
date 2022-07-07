@@ -1,0 +1,21 @@
+<view class="page-body">
+  <!-- 没有关联企业主页 -->
+  <view class="no-com" wx:if="{{comList.length==0}}">
+    <create-com></create-com>
+    <!-- <image class="no-img" src="https://file.mphdx.com/2021/05/13/eaa4396b5c8e48ffa6601f0cab905e7d.png"></image>
+    <text class="no-text">暂未关联企业主页</text> -->
+  </view>
+
+  <block wx:else>
+    <view class="list" wx:for="{{comList}}" wx:key="index" data-id="{{item.id}}" data-comid="{{item.companyPageId}}" bindtap="tocompage">
+      <view class="left">
+        <image class="logo" src="{{item.companyPageLogo}}"></image>
+        <view class="tx">
+          <text class="title">{{item.companyPageTitle}}</text>
+          <text class="desc">{{item.companyPageInfo}}</text>
+        </view>
+      </view>
+      <image class="arrow" src="/images/activity/ic_arrows.png"></image>
+    </view>
+  </block>
+</view>

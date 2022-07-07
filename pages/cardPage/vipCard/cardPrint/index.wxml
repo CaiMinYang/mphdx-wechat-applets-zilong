@@ -1,0 +1,156 @@
+<view class="page">
+  <view class="nav-tab">
+    <view data-index="1" bindtap="select" class="tab-item left-radiu {{selected==1?'selected':''}}">图片名片</view>
+    <view data-index="2" bindtap="select" class="tab-item {{selected==2?'selected':''}}">二维码名片</view>
+    <view data-index="3" bindtap="select" class="tab-item right-radiu {{selected==3?'selected':''}}">名片海报</view>
+  </view>
+  <view class="page-content">
+    <!-- 定制名片 -->
+    <block wx:if="{{selected==1}}">
+
+      <view class="print-imgs">
+        <swiper class="swiper" bindchange="bindchange1" current="{{current1}}" indicator-dots="{{addsimgBl}}" duration="300"
+          circular="true" style="height:{{imgheightes}}rpx;">
+          <block wx:if="{{shapeType == 1}}">
+            <swiper-item>
+              <view class="print-tip">图片名片-独立正面反面</view>
+              <image class="print-img" src="{{frontImg}}" data-src="{{frontImg}}" bindtap="preview" mode="widthFix">
+              </image>
+              <image class="print-img" src="{{backImg}}" data-src="{{backImg}}" bindtap="preview" mode="widthFix"
+                wx:if="{{backImg}}"></image>
+            </swiper-item>
+            <block wx:if="{{frontComposeUrl}}">
+              <swiper-item>
+                <view class="print-tip">图片名片-连体正面在上</view>
+                <image src="{{frontComposeUrl}}" data-src="{{frontComposeUrl}}" bindtap="preview" class="print-img"
+                  mode="widthFix" />
+              </swiper-item>
+            </block>
+            <block wx:if="{{backComposeUrl}}">
+              <swiper-item>
+                <view class="print-tip">图片名片-连体反面在上</view>
+                <image src="{{backComposeUrl}}" data-src="{{backComposeUrl}}" bindtap="preview" class="print-img"
+                  mode="widthFix" />
+              </swiper-item>
+            </block>
+          </block>
+          <block wx:else>
+            <swiper-item>
+              <view class="print-tip">图片名片-独立正面</view>
+              <image class="print-img" bindload="verticalImg" src="{{frontImg}}" data-src="{{frontImg}}"
+                bindtap="preview" mode="widthFix">
+              </image>
+            </swiper-item>
+            <swiper-item>
+              <view class="print-tip">图片名片-独立反面</view>
+              <image class="print-img" src="{{backImg}}" data-src="{{backImg}}" bindtap="preview" mode="widthFix"
+                wx:if="{{backImg}}"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </block>
+    <!-- 二维码名片 -->
+    <block wx:if="{{selected==2}}">
+      <view class="print-tip">二维码名片打印效果图</view>
+      <view class="print-imgs">
+        <view class="card">
+          <image class="qrcode-img" src="{{front}}" data-src="{{front}}" bindtap="preview" mode="widthFix"></image>
+        </view>
+        <!-- <view class="card-back">
+          <image class="qrcode-img" src="{{back}}" data-src="{{back}}" bindtap="preview"  mode="widthFix"></image>
+        </view> -->
+      </view>
+    </block>
+    <!-- 名片海报 -->
+    <block wx:if="{{selected==3}}">
+      <view class="outer">
+        <swiper class="hb-swiperl" indicator-dots="true" duration="300" bindchange="bindchange" circular="true">
+          <swiper-item wx:for='{{imgweb}}' wx:for-item='item' wx:key="index" wx:for-index='index'>
+            <view class="swiper-hb">
+              <image class="hb-bianji" src="/images/bianji.png" bindtap="bindEtext"></image>
+              <view class="hb-date">
+                <view class="hb-date-ri">{{dateDay}}</view>
+                <view class="hb-date-nian">
+                  <view class="hb-date-yue">{{dateYear}}/{{dateMonth}}</view>
+                  <view>{{dateWeek}}</view>
+                </view>
+              </view>
+              <view class="hb-text">{{textcontent}}</view>
+              <view class="hb-name">
+                <view class="hb-name-na">{{basicInfo.username}}</view>
+                <view class="hb-gs">{{basicInfo.position}}</view>
+                <view class="hb-gs hb-widts">{{basicInfo.companyname}}</view>
+              </view>
+              <view class="hb-ma">
+                <view class="hb-ma-img">
+                  <image class="qrcode" src='data:image/png;base64,{{imgCode}}'></image>
+                </view>
+              </view>
+
+
+              <image class="hb-img" src="{{item}}"></image>
+              <view class="hb-tips">Tips：长按识别二维码，保存名片</view>
+            </view>
+          </swiper-item>
+          <!-- <swiper-item>
+            <view class="swiper-hb">
+              <image class="hb-bianji" src="/images/bianji.png"></image>
+              <view class="hb-date">
+                <view class="hb-date-ri">{{dateDay}}</view>
+                <view class="hb-date-nian">
+                  <view class="hb-date-yue">{{dateYear}}/{{dateMonth}}</view>
+                  <view>{{dateWeek}}</view>
+                </view>
+              </view>
+              <view class="hb-text">{{textcontent}}</view>
+              <view class="hb-name">
+                <view class="hb-name-na">{{basicInfo.username}}</view>
+                <view class="hb-gs">{{basicInfo.position}}</view>
+                <view class="hb-gs">{{basicInfo.companyname}}</view>
+              </view>
+              <view class="hb-ma">
+                <view class="hb-ma-img">
+                  <image class="qrcode" src='data:image/png;base64,{{imgCode}}'></image>
+                </view>
+              </view>
+
+
+              <image class="hb-img" src="https://file.mphdx.com/poster/hb2.png"></image>
+              <view class="hb-tips">Tips：长按识别二维码，保存名片</view>
+            </view>
+          </swiper-item> -->
+        </swiper>
+      </view>
+
+    </block>
+
+    <view class="bottom-action">
+      <view class="share">
+        <button class="share-btn" bindtap="printcard">
+          <image class="action-img" src="/images/card/print.png"></image>
+          <text class="btn-text">在线印刷配送</text>
+        </button>
+      </view>
+      <view class="down">
+        <view class="down-area" bindtap="saveImg">
+          <image class="action-img1" src="/images/tmp/8.png"></image>
+          <text class="btn-text">保存图片到手机</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="etext" wx:if="{{etext==1}}">
+  <view class="etext-edit">
+    <view class="etext-title">编辑海报文案</view>
+    <textarea class="etext-area"  value='{{textcontent}}' bindblur="bindTextAreaBlur"/>
+    <view class="etext-butt">
+      <view class="etext-butt-time etext-butt-lebr" bindtap="bindEtextDidle">取消</view>
+      <view class="etext-butt-time etext-butt-baocun" bindtap="bindEtextOk">保存</view>
+    </view>
+  </view>
+</view>
+
+<canvas canvas-id='share'
+  style='width:315px;height:500px;position: absolute;top: -10000px;'></canvas>

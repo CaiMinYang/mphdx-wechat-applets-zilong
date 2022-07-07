@@ -1,0 +1,8 @@
+<view class="view-box">
+  <image class="guide-img" src="https://file.mphdx.com/2021/06/03/e2fc9799d7db4b75a7282606856d26c6.png"></image>
+  <text class="txt">电脑端挑选企业数字名片模板</text>
+  <text class="txt">海量标准模板可供选择</text>
+  <text class="txt">也可定制开发名片模板</text>
+  <text class="url">https://www.dbcstore.com</text>
+  <button class="clip" bindtap="clipurl">复制网址</button>
+</view>

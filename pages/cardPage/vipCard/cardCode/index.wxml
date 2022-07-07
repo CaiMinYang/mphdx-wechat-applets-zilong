@@ -1,0 +1,61 @@
+<canvas canvas-id='share'
+  style='width:375px;height:375px; position: absolute; top: -990px; z-index: 99; margin: auto;'></canvas>
+
+<view class="box">
+  <view class="wrap">
+    <view class="qrocde-wrap">
+      <!-- <image wx:if="{{url}}" src="{{url}}" class="qrcode" bindtap="preview"></image> -->
+      <block wx:if="{{type==1}}">
+      <!-- 公司logo -->
+        <image class="qrcode" src='data:image/png;base64,{{imgCode}}'></image>
+        <image class="qrcode-zindex-2" src='/images/yuan.png'></image>
+        <image class="qrcode-zindex" src='{{cardDataLogo}}'></image>
+      </block>
+      <block wx:else>
+        <image class="qrcode" src='data:image/png;base64,{{imgCode}}'></image>
+      </block>
+
+    </view>
+    <view class="left"></view>
+    <view class="right"></view>
+    <view class="text">
+      保存二维码，可用于公众号、纸质名片、海报、网站，访客扫描进入您的名片，实时对访客进分析，帮您精准获客。
+    </view>
+  </view>
+  <view class="select-wrap" wx:if="{{isSelf}}">
+    <view class="title">设置样式</view>
+    <view class="ss s1">
+      <radio-group class="select1" bindchange="radioChange1">
+        <label class="se-inner">
+          <radio value="1" checked="{{type==1?true:false}}"></radio>内嵌公司Logo
+        </label>
+        <label class="se-inner">
+          <radio value="2" checked="{{type==2?true:false}}"></radio>内嵌名片活动行Logo
+        </label>
+      </radio-group>
+    </view>
+    <view class="title">设置尺寸</view>
+    <radio-group bindchange="radioChange2">
+      <label class="ss s2">
+        <radio value="1" checked="{{width==375?true:false}}"></radio>小码 12cm 适合纸质名片、工牌
+      </label>
+      <label class="ss s2">
+        <radio value="2" checked="{{width==430?true:false}}"></radio>中码 15cm 适合宣传页、画册
+      </label>
+      <label class="ss s2">
+        <radio value="3" checked="{{width==860?true:false}}"></radio>大码 30cm 适合易拉宝、海报
+      </label>
+      <label class="ss s2">
+        <radio value="4" checked="{{width==1280?true:false}}"></radio>超大码 50cm 适合户外大广告
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="action" wx:if="{{isSelf}}">
+  <view class="down-area" bindtap="saveImage">
+    <text class="btn-text">保存到手机</text>
+  </view>
+</view>
+
+<authorizedModal modal-hidden="{{is_authorized}}" bind:refreshEvent="_refreshEvent"></authorizedModal>

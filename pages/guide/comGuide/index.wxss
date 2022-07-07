@@ -1,0 +1,206 @@
+.main1{
+  background:url("https://image.mphdx.com/material/2022/07/04/c7a2a99921bd494e8d235fcc0dfcbbb3.png");
+  height:994rpx;
+  width:750rpx;
+  padding:1px;
+}
+.main2{
+  background:url("https://image.mphdx.com/material/2022/07/04/c7a2a99921bd494e8d235fcc0dfcbbb3.png");
+  height:985rpx;
+  width:750rpx;
+  padding:1px;
+}
+.main3{
+  background:url("https://image.mphdx.com/material/2022/07/04/c7a2a99921bd494e8d235fcc0dfcbbb3.png");
+  height:1074rpx;
+  width:750rpx;
+  padding:1px;
+}
+.main4{
+  background:url("https://image.mphdx.com/material/2022/07/04/c7a2a99921bd494e8d235fcc0dfcbbb3.png");
+  height:1074rpx;
+  width:750rpx;
+  padding:1px;
+}
+.main5{
+  background:url("https://image.mphdx.com/material/2022/07/04/c7a2a99921bd494e8d235fcc0dfcbbb3.png");
+  height:624rpx;
+  width:750rpx;
+  padding:1px;
+}
+.bgImg1{
+   width:750rpx;
+   height:744rpx;
+   background:url("https://image.mphdx.com/material/2022/07/04/69d45e65bd5a4007b7766f854d6fb688.png");
+   background-size:100% 100%;
+}
+.title1{
+  width: 480rpx;
+  height: 67rpx;
+  color: rgba(255,255,255,1);
+  font-size: 48rpx;
+  font-family: PingFangSC-Medium;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 67rpx;
+  margin: -16rpx 0 0 136rpx;
+}
+.content1{
+  width: 690rpx;
+  height: 90rpx;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  line-height: 50rpx;
+  letter-spacing: 2rpx;
+  margin: 29rpx auto;
+  display:block;
+}
+.frame1{
+  width: 690rpx;
+  height: 865rpx;
+  margin: 60rpx 0 0 30rpx;
+}
+.title2{
+  width: 440rpx;
+  height: 56rpx;
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 56rpx;
+  margin-left: 129rpx;
+}
+.bgImg2{
+  width: 690rpx;
+  height: 594rpx;
+  background: url(https://image.mphdx.com/material/2022/07/07/24342002af4247bf8b877ed1e9f2a13d.png);
+  background-size: 690rpx 596rpx;
+  margin-top: 40rpx;
+}
+.content2{
+  width: 670rpx;
+  height: 135rpx;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  line-height: 50rpx;
+  margin: 40rpx auto;
+  letter-spacing: 2rpx;
+
+  display: block;
+}
+.frame2{
+  width: 690rpx;
+  height: 865rpx;
+  margin: 60rpx 0 0 30rpx;
+}
+.title3{
+  width: 440rpx;
+  height: 56rpx;
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 56rpx;
+  margin-left: 129rpx;
+}
+.bgImg3{
+  width: 641rpx;
+  height: 683rpx;
+  background: url(https://image.mphdx.com/material/2022/07/07/cedba5b2668d40208f423705d7a206ab.png) no-repeat;
+  background-size: 100% 100%;
+  margin:40rpx 0 0 25rpx;
+}
+.content3{
+  width: 690rpx;
+  height: 135rpx;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  letter-spacing: 2rpx;
+  line-height: 50rpx;
+  margin: 40rpx 0 89rpx 0;
+}
+.frame3{
+  width: 690rpx;
+  height: 865rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 60rpx 0 0 30rpx;
+}
+.title4{
+  width: 440rpx;
+  height: 56rpx;
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 56rpx;
+  margin:0 auto;
+}
+.bgImg4{
+  width: 641rpx;
+  height: 683rpx;
+  margin: 40rpx 0 0 29rpx;
+  background-image:url(https://image.mphdx.com/material/2022/07/07/d8150e4fcef64cfeaea6249e911cdf16.png);
+  background-size:100% 100%;
+}
+.content4{
+  width: 690rpx;
+  height: 135rpx;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  line-height: 50rpx;
+    margin: -50rpx auto;
+    letter-spacing: 2rpx;
+}
+.frame4{
+  width: 690rpx;
+  height: 464rpx;
+  margin: 60rpx 0 0 30rpx;
+}
+.title5{
+  width: 294rpx;
+  height: 56rpx;
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 56rpx;
+  margin:0 auto;
+}
+.bgImg5{
+  width: 690rpx;
+  height: 228rpx;
+  margin-top: 40rpx;
+  background-image:url(https://image.mphdx.com/material/2022/07/05/db1ebfbff7134938bc8b651094f19100.png);
+  background-size:100% 100%;
+}
+.button1{
+  border-radius: 44rpx;
+  height: 84rpx;
+  background-color:rgb(0,153,232);
+  width: 674rpx;
+  margin: 88rpx auto;
+}
+.buttonContent{
+  width: 674rpx;
+  height: 84rpx;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  display:block;
+  letter-spacing: 3rpx;
+  font-family: PingFangSC-Regular;
+  line-height: 84rpx;
+  margin-left:-37rpx;
+}

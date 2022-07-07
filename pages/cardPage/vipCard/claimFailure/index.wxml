@@ -1,0 +1,7 @@
+<view>
+  <view class="icons">
+    <image src="https://file.mphdx.com/2021/06/16/825d96ee6a124930bcb1f4ddc6e3281a.png"></image>
+  </view>
+  <view class="desc">认领失败，请确认制作时手机号输入无误，如果无误过3分钟重试，请勿重复领取！</view>
+  <button open-type="share" class="recommend">推荐给HR</button>
+</view>

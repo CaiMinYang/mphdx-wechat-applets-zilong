@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "企业数字名片",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "authorizedModal": "/component/authorizedBox/authorizedBox",
+    "cardswapModal": "/component/cardSwapedTip/index",
+    "swapedNote": "/component/swapedRenew/index",
+    "iconfont": "../../components/iconfont/iconfont",
+    "leave-word": "../../components/leave-word/index",
+    "guide-app": "/component/guide-app/index",
+    "auth-view": "../../components/auth-view/index"
+  }
+}

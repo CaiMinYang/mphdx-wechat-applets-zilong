@@ -1,0 +1,280 @@
+<view class="page">
+  <view class="main11">
+    <view class="mod1">
+      <view class="bd1">
+        <text lines="1" class="info1"style="font-weight:600">企业数字名片系统</text>
+        <text lines="1" decode="true" class="word1">企&nbsp;业&nbsp;数&nbsp;字&nbsp;身&nbsp;份&nbsp;管&nbsp;理&nbsp;专&nbsp;家</text>
+     
+        <image src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnge26e2956217a848cb80ab803e86d356379f564bae3d3bfe40370cb741512306c" class="pic1"></image>
+        <button class="headButton" bindtap="startCards" >
+      <text lines="1" class="word500">企业免费试用</text>
+    </button>
+      </view>
+      <image src="https://image.mphdx.com/material/2022/07/05/457fc7cb2d6242e6a68670f31218475b.png" class="pic2"></image>
+    </view>
+    <text lines="1" class="info2"style="font-weight:600">数字名片系统给企业带来了什么？</text>
+    <view class="mod2">
+      <view class="main1">
+        <text lines="1" class="word2"style="font-weight:600">降本增效：</text>
+        <text lines="1" decode="true" class="paragraph1">1.&nbsp;降低企业纸质名片及纸质宣传物料设计及印刷成本80%；\n2.&nbsp;批量制作分发名片，3分钟可制作1000张员工名片；\n3.&nbsp;数字名片实时修改更新，方便携带收藏，永不丢失；\n4.&nbsp;批量印刷名片，没有地域和时效限制，实时印刷配送；\n5.&nbsp;名片轨迹跟踪（谁访问谁收藏），实时查看名片发送量，收藏量，访问量，转发量等；</text>
+      </view>
+      <image src="https://image.mphdx.com/material/2022/06/27/b2bbe263f0744b648303c97e1e787335.png" class="img1"></image>
+    </view>
+    <view class="mod3">
+      <view class="mod4">
+        <image src="https://image.mphdx.com/material/2022/06/27/af25688ef9644a869b124913b41af331.png" class="img2"></image>
+        <view class="main2">
+          <text lines="1" class="word3"style="font-weight:600">智能营销：</text>
+          <text lines="1" decode="true" class="paragraph2">1.&nbsp;数字名片关联企业宣传自动跟踪访客，大数据智能测算销售线索；\n2.&nbsp;数字名片可以继承使用，只需修改名片信息让销售人员继承使用，发出去的名片永不丢失让客户不迷路；\n3.&nbsp;企业全员营销推广，实时抓取数据在微信及MICE生态建立企业自己的私域流量池；\n4.&nbsp;公司集中管理客户名片，员工端智能扫描识别上传云端，管理后台可授权员工共享客户资源；</text>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="txt1"style="font-weight:600">数字名片系统有哪些功能特征？</text>
+    <view class="mod5">
+      <view class="wrap1-0">
+        <view class="main3-0">
+          <view class="layer2-0">
+            <view class="section1-0">
+              <view class="bd3-0"></view>
+            </view>
+            <text lines="1" class="word4-0"style="font-weight:600">线上线下统一样式</text>
+          </view>
+        </view>
+      </view>
+      <view class="wrap1-1">
+        <view class="main3-1">
+          <view class="layer2-1">
+            <view class="section1-1">
+              <view class="bd2-1"></view>
+            </view>
+            <text lines="1" class="word4-1"style="font-weight:600">名片实时轨迹追踪</text>
+          </view>
+        </view>
+      </view>
+      <view class="wrap1-2">
+        <view class="main3-2">
+          <view class="layer2-2">
+            <view class="section1-2">
+              <view class="bd2-2"></view>
+            </view>
+            <text lines="1" class="word4-2"style="font-weight:600">批量创建分发名片</text>
+          </view>
+        </view>
+      </view>
+      <view class="wrap1-3">
+        <view class="main3-3">
+          <view class="layer2-3">
+            <view class="section1-3">
+              <view class="bd2-3"></view>
+            </view>
+            <text lines="1" class="word4-3"style="font-weight:600">客户名片集中管理</text>
+          </view>
+        </view>
+      </view>
+      <view class="wrap1-4">
+        <view class="main3-4">
+          <view class="layer2-4">
+            <view class="section1-4">
+              <view class="bd3-4"></view>
+            </view>
+            <text lines="1" class="word4-4"style="font-weight:600">实时更新修改名片</text>
+          </view>
+        </view>
+      </view>
+      <view class="wrap1-5">
+        <view class="main3-5">
+          <view class="layer2-5">
+            <view class="section1-5">
+              <view class="bd3-5"></view>
+            </view>
+            <text lines="1" class="word4-5"style="font-weight:600">全员名片数据分析</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="mod6">
+      <view class="layer3">
+        <text lines="1" class="word5"style="font-weight:600">什么是企业数字名片系统？</text>
+        <view class="block1">
+          <view class="box1">
+            <view class="group1">
+              <view class="layer4"></view>
+            </view>
+          </view>
+          <view class="img3"></view>
+        </view>
+        <view class="block2">
+          <text lines="1" class="word6">PC管理后台</text>
+          <text lines="1" decode="true" class="txt2">统一线上线下名片模板，批量创建员工名片，设置名片权限&nbsp;，管理客户名片资源，名片数据分析…</text>
+        </view>
+        <view class="block3">
+          <text lines="1" class="word7">员工在手机端</text>
+          <text lines="1" decode="true" class="word8">领取自己的数字名片，分发名片及企业数字宣传，上传客户名片信息…</text>
+        </view>
+        <view class="block4">
+          <text lines="1" class="txt3">客户在手机端</text>
+          <text lines="1" decode="true" class="word9">查看收藏数字名片&amp;企业宣传，一键保存名片到名片夹&amp;手机通讯录…</text>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="info3"style="font-weight:600">企业数字名片管理端（PC）</text>
+    <view class="mod7">
+    </view>
+    <view class="mod8">
+      <text lines="1" class="word11" style="font-weight:600">名片模板管理: </text>
+      <text lines="1" class="word12" />
+      <text lines="1" class="word13">统一管理公司数字名片模板（可以定制多模板），自定义名片详情，名片皮肤色等。</text>
+    </view>
+    <view class="mod9">
+      <text lines="1" class="info6" style="font-weight:600">员工名片管理: </text>
+      <text lines="1" class="word14">批量导入员工信息，批量生成名片，批量通知员工认领名片，管理入职离职员工信息修改。</text>
+    </view>
+    <view class="mod10">
+      <text  class="word15"style="font-weight:600">名片权限管理: </text><text lines="1" class="info7">按角色设置员工权限，灵活控制企业成员名片修改及使用权限。</text>
+    </view><view class="mod11">
+      <text lines="1" class="word16"style="font-weight:600">企业级名片夹: </text>
+      <text lines="1" class="word17">创建企业名片夹，管理公司员工名片分组，同组员工可以查看彼此并可转发他人名片。</text>
+    </view>
+    <view class="mod12">
+      <text lines="1" class="txt4"style="font-weight:600">客户名片管理: </text>
+      <text lines="1" decode="true" class="word18">&nbsp;集中管理企业所有客户名片资源，员工手机智能扫描名片快速存入公司名片库，多层权限管理，团队协同合作提高销售团队业绩。</text>
+    </view>
+    <view class="mod13">
+      <text lines="1" class="word19"style="font-weight:600">名片数据分析: </text>
+      <text lines="1" class="word20">实时分析企业员工名片的使用数据，名片发送量，访问量，收藏量等。</text>
+    </view>
+    <view class="mod14">
+      <text lines="1" class="word21"style="font-weight:600">名片在线印刷: </text>
+      <text lines="1" class="word22">数字名片可生成名片码，图片数字名片，二维码名片等。可以在线印刷名片及配送。</text>
+    </view>
+    <view class="outer9">
+      <text lines="1" class="word51"style="font-weight:600">数字身份管理: </text>
+      <text lines="1" class="txt21">名片数字身份跟踪管理，每一张名片有自己的唯一ID（删除、停用、继承）。</text>
+    </view>
+    <view class="mod15">
+      <view class="box13">
+        <text lines="1" class="info8"style="font-weight:600">企业数字名片员工端（微信）</text>
+        <image src="https://image.mphdx.com/material/2022/06/27/8e5b64aedc9c4808977f98695cec0e38.png" class="pic5"></image>
+        <view class="layer6">
+          <text lines="1" class="txt5"style="font-weight:600">智联企业: </text>
+          <text lines="1" class="word23">员工名片关联公司AI数字宣传及发票抬头，快捷宣传推广企业，企业全员智能营销。</text>
+        </view>
+        <view class="layer7">
+          <text lines="1" class="word24"style="font-weight:600">快捷使用: </text>
+          <text lines="1" class="word25">一键发送名片，永不丢失，客户打开名片即收藏到客户名片夹。免费名片扫描，免费生成图片电子名片及二维码名片。</text>
+        </view>
+        <view class="layer8">
+          <text lines="1" class="info9"style="font-weight:600">客户名片管理: </text>
+          <text lines="1" decode="true" class="info10">员工手机端智能扫描客户纸质名片快速存入客户名片资源库，客户名片资源可多层权限管理&nbsp;。</text>
+        </view>
+        <view class="layer9">
+          <text lines="1" class="word26"style="font-weight:600">名片社交: </text>
+          <text lines="1" class="info11">一键发送数字名片给微信及企信好友，小程序内交换名片。面对面扫码交换名片。</text>
+        </view>
+        <view class="layer10">
+          <text lines="1" class="info12"style="font-weight:600">数据跟踪: </text>
+          <text lines="1" class="info13">AI雷达记录名片轨迹，精准分析名片数据，让名片不迷路，形成基于名片社交的SCRM。</text>
+        </view>
+        <view class="layer11">
+          <text lines="1" class="txt6"style="font-weight:600">企业名片夹: </text>
+          <text lines="1" class="info14">企业名片夹，管理公司员工名片分组，同组员工可转发他人名片。</text>
+        </view>
+        <view class="layer12">
+          <text lines="1" class="info15"style="font-weight:600">名片印刷: </text>
+          <text lines="1" class="txt7">数字名片可生成名片码，图片数字名片，二维码名片等。亦可在线印刷名片及配送。</text>
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="word27"style="font-weight:600">企业数字名片客户端（微信）</text>
+    <image src="https://image.mphdx.com/material/2022/06/27/6dcbb82b80084f9f9adcb2a1474fb0d2.png" class="img5"></image>
+    <view class="mod19">
+      <text lines="1" class="info17"style="font-weight:600">一键电话: </text>
+      <text lines="1" class="word30">一键直接拨打名片上的手机。</text>
+    </view>
+    <view class="mod20">
+      <text lines="1" class="word31"style="font-weight:600">一键导航: </text>
+      <text lines="1" class="word32">一键导航到公司地址。</text>
+    </view>
+    <view class="mod21">
+      <text lines="1" class="txt11"style="font-weight:600">一键分享: </text>
+      <text lines="1" decode="true" class="word33">一键转发名片（如果设置可分享）。</text>
+    </view>
+    <view class="mod22">
+      <text lines="1" class="info18"style="font-weight:600">一键收藏: </text>
+      <text lines="1" decode="true" class="txt12">打开名片自动收藏&nbsp;名片到个人名片夹。</text>
+    </view>
+    <view class="mod17">
+      <text lines="1" class="txt8"style="font-weight:600">回递名片: </text>
+      <text lines="1" decode="true" class="txt9">一键回递数字名片给对方。</text>
+    </view>
+    <view class="mod16">
+      <text lines="1" class="word28"style="font-weight:600">保存通讯录: </text>
+      <text lines="1" class="word29">客户一键保存个人名片信息到手机通讯录。</text>
+    </view>
+    <view class="mod18">
+      <text lines="1" class="txt10"style="font-weight:600">查看该企业: </text>
+      <text lines="1" decode="true" class="info16">查看企业相关资料（宣传页，企业主页，企业商城，视频，文档…）。</text>
+    </view>
+
+    <view class="mod23">
+      <view class="mod46">
+        <text lines="1" class="word34"style="font-weight:600">数字名片使用场景</text>
+        <view class="section5">
+          <view class="mod24"></view>
+          <text lines="1" class="txt13"style="font-weight:600">线上使用</text>
+          <view class="mod25"></view>
+        </view>
+        <view class="section6">
+         
+        </view>
+        <view class="section8">
+          <view class="box7"></view>
+          <text lines="1" class="txt16" style="font-weight:600">线下使用</text>
+          <view class="box8"></view>
+        </view>
+        <view class="section9">
+       
+        </view>
+      </view>
+    </view>
+    <text lines="1" class="word40"style="font-weight:600">数字名片基于微信生态，使用便捷，高效智能</text>
+    <view class="outer10">
+      <view class="mod27">
+        <view class="mod28">
+        </view>
+      </view>
+      <view class="mod29">
+        <view class="main9">
+        </view>
+      </view>
+      <view class="mod31">
+        <view class="outer4">
+        </view>
+      </view>
+      <view class="mod32">
+        <view class="wrap2">
+        </view>
+      </view>
+    </view>
+    <view class="mod33">
+      <view class="bd8">
+        <text lines="1" class="word45" style="font-weight:600">数字名片可降低企业成本，提升销售业绩</text>
+      </view>
+      <view class="mod38">
+      </view>
+      <view class="mod39">
+      </view>
+      <view class="mod41">
+      </view>
+      <view class="mod43">
+      </view>
+      <view class="mod44">
+      </view>
+      <view class="mod45">
+      </view>
+      <button class="box12" bindtap="startCards" >
+      <text lines="1" class="word50">企业免费试用</text>
+    </button>
+    </view>
+  </view>
+</view>

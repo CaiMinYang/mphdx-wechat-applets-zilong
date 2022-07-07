@@ -1,0 +1,22 @@
+.item{
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  padding: 0 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.img-arrow {
+  width: 16px;
+  height: 16px;
+}
+.txt {
+  flex: 1;
+  padding-right: 20px;
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

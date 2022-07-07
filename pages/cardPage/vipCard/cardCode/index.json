@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "名片码",
+  "usingComponents": {
+    "authorizedModal": "/component/authorizedBox/authorizedBox"
+  },
+  "navigationBarBackgroundColor": "#EEEEEE",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#F1F1F1"
+}

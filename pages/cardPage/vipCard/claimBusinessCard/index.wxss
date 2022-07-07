@@ -1,0 +1,57 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.topContainer {
+  width: 650rpx;
+  height: 740rpx;
+  background-color: #ffffff;
+  padding: 40rpx 50rpx 0;
+}
+
+.topImage {
+  width: 650rpx;
+  height: 320rpx;
+  margin-bottom: 60rpx;
+}
+
+.testPhone {
+  font-size: 48rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+}
+
+.desc {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+
+.desc .blue {
+  color: #1B85D5;
+}
+
+.mt40 {
+  margin-top: 40rpx;
+}
+
+.claimNow {
+  width: 384rpx;
+  height: 88rpx;
+  background-color: #1B85D5;
+  border-radius: 8rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+  margin: 80rpx auto 0;
+  text-align: center;
+  line-height: 88rpx;
+}
+
+.recommend {
+  margin: 40rpx auto 0;
+  color: #1B85D5;
+  font-size: 32rpx;
+  background-color: transparent;
+}

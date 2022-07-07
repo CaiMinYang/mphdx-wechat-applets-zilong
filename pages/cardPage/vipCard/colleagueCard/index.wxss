@@ -1,0 +1,179 @@
+.card-tab-case {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  color: #666;
+}
+.card-tab-page {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.card-tab-page image {
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: -10rpx;
+  padding-right: 10rpx;
+}
+.tab-search image {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: -6rpx;
+}
+.sort-filter {
+  position: absolute;
+  top: 84rpx;
+  left: 0;
+  background: #fff;
+  width: 750rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.list{
+  padding-top: 100rpx;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.scroll-box .sort-letter {
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 50rpx;
+  color: #797979;
+  font-size: 32rpx;
+  font-weight: 700;
+  background: #f0f0f0;
+  box-sizing: border-box;
+}
+.scroll-box .sort-letter-padding, .scroll-box .sort-letter {
+  line-height: 100rpx;
+}
+.sort-filter .filter-item {
+    margin: 0 30rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+.sort-filter .filter-item image {
+  width: 44rpx;
+  height: 44rpx;
+  padding-right: 20rpx;
+  vertical-align: -10rpx;
+}
+.sort-filter .filter-item .icon-sure {
+  width: 26rpx;
+  height: 26rpx;
+  float: right;
+  margin: 28rpx 20rpx 0 0;
+}
+.scroll-box .group-item {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+.list-item {
+  background: #fff;
+}
+.scroll-box .list-item {
+  display: flex;
+  height: 170rpx;
+  align-items: center;
+  padding: 0 0 0 40rpx;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+.scroll-box .group-item .list-item:last-child, 
+.sort-filter .filter-item:last-child {
+  border-bottom: none;
+  z-index: 9999;
+}
+.avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin-right: 30rpx;
+}
+.avatar image {
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #f4f4f4;
+}
+.userbrief {
+  width: 440rpx;
+  overflow: hidden;
+  text-align: left;
+}
+.userbrief .username {
+  display: block;
+  font-size: 32rpx;
+  color: #555;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.userbrief .position, .userbrief .comname {
+  display: block;
+  height: 38rpx;
+  padding-top: 5rpx;
+  font-size: 27rpx;
+  color: #888;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list-right {
+  position: relative;
+  float: left;
+  width: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.fabs-card-more {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: -16rpx;
+}
+.fabs-list {
+  display: none;
+  right: 0;
+}
+.fabs-fadeIn {
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+.fabs-list .fabs-item:first-child {
+  position: absolute;
+  top: -60rpx;
+  right: 130rpx;
+  z-index: 999999;
+}
+.fabs-item image {
+  width: 82rpx;
+  height: 82rpx;
+  vertical-align: -20rpx;
+}
+.fabs-list .fabs-item:nth-child(2) {
+  position: absolute;
+  bottom: -40rpx;
+  right: 130rpx;
+  z-index: 999999;
+}
+.fabs-list .fabs-item:nth-child(2) {
+  bottom: -84rpx;
+}
+.no-data-wrapper{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #1a1a1a;
+}

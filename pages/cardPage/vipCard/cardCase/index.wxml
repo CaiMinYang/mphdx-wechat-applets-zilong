@@ -1,0 +1,83 @@
+<view class="card-tab-case fn-cb">
+  <view class="card-tab-page">
+    <view class="searchwrapper">
+      <image class="seek" src="/images/card/icon-card-search.png"></image>
+      <input type="text" class="searchinput" />
+    </view>
+    <text class="selectAll">全选</text>
+  </view>
+</view>
+<scroll-view scroll-y="true" class="scroll-box container" bindscrolltoupper="upper" upper-threshold="10"
+  lower-threshold="1000" bindscrolltolower="lowerUser" scroll-into-view="{{alpha}}" bindscroll='hideFabsModal'>
+  <!-- 自己的名片置顶 -->
+  <view class="my-group-letter sort-letter" wx:if="{{myCaseList.length>0}}">我的名片</view>
+  <view class="my-group-item" wx:if="{{myCaseList.length>0}}">
+    <block wx:for="{{myCaseList}}" wx:key="index" wx:for-index="index" wx:for-item="cell">
+      <view class="list-item" data-cardid="{{cell.id}}" data-userid="{{cell.userid}}" data-feetype="{{cell.feeType}}">
+        <view class="avatar">
+          <!--判断是扫描的名片还是电子档的名片-->
+          <block wx:if="{{cell.scanphoto}}">
+            <image src="{{cell.scanphoto}}" mode="scaleToFill"></image>
+          </block>
+          <block wx:else>
+            <!--优先选择公司logo 其次选择公司名称带出的logo  最后选择用户头像-->
+            <block wx:if="{{cell.companylogo}}">
+              <image src="{{cell.companylogo}}" mode="scaleToFill"></image>
+            </block>
+            <block wx:elif="{{cell.defaultcomplogo && !cell.companylogo}}">
+              <image src="{{cell.defaultcomplogo}}" mode="scaleToFill"></image>
+            </block>
+            <block wx:else>
+              <image src="{{cell.logo?cell.logo:'/images/more/self-headicon.jpg'}}" mode="scaleToFill"></image>
+            </block>
+          </block>
+        </view>
+        <view class="userbrief">
+          <view class="username">{{cell.username}}<image wx:if="{{cell.feeType==2}}" src="/images/vip.png"
+              style="width:12px;height:12px;margin-left:6px;"></image>
+          </view>
+          <text class="position" wx:if="{{cell.position}}">{{cell.position}}</text>
+          <text class="comname">{{cell.companyname}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="sort-letter" wx:if="{{cardCaseList.length>0}}">我收藏的名片</view>
+  <view class="group-item" wx:if="{{cardCaseList.length>0}}">
+    <block wx:for="{{cardCaseList}}" wx:key="idx" wx:for-index="idx" wx:for-item="cell">
+      <view class="list-item" data-cardid="{{cell.id}}" data-userid="{{cell.userid}}" data-feetype="{{cell.feeType}}"
+        data-shapetype="{{cell.shapeType}}">
+        <view class="avatar">
+          <!--判断是扫描的名片还是电子档的名片-->
+          <block wx:if="{{cell.scanphoto}}">
+            <image src="{{cell.scanphoto}}" mode="scaleToFill"></image>
+          </block>
+          <block wx:else>
+            <!--优先选择公司logo 其次选择公司名称带出的logo  最后选择用户头像-->
+            <block wx:if="{{cell.companylogo}}">
+              <image src="{{cell.companylogo}}" mode="scaleToFill"></image>
+            </block>
+            <block wx:elif="{{cell.defaultcomplogo}}">
+              <image src="{{cell.defaultcomplogo}}" mode="scaleToFill"></image>
+            </block>
+            <block wx:else>
+              <image src="{{cell.logo?cell.logo:'/images/more/self-headicon.jpg'}}" mode="scaleToFill"></image>
+            </block>
+          </block>
+        </view>
+        <view class="userbrief">
+          <view class="username">{{cell.username}}<image wx:if="{{cell.feeType==2}}" src="/images/vip.png"
+              style="width:12px;height:12px;margin-left:6px;"></image>
+          </view>
+          <text class="position" wx:if="{{cell.position}}">{{cell.position}}</text>
+          <text class="comname">{{cell.companyname}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='loading-box' hidden='{{dataLoading}}'>
+    <image src='/images/more/icon-loading.gif'></image>加载中
+  </view>
+
+</scroll-view>

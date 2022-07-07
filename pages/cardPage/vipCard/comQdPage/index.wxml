@@ -1,0 +1,19 @@
+<view class="page-body">
+  <!-- 没有关联企业主页 -->
+  <view class="no-com" wx:if="{{comList.length==0}}">
+    <create-com></create-com>
+  </view>
+
+  <block wx:else>
+    <view class="list" wx:for="{{comList}}" wx:key="index" data-index="{{index}}"  bindtap="tocompage" wx:if="{{item.isPay}}">
+      <view class="left">
+        <image class="logo" src="{{item.logo}}"></image>
+        <view class="tx">
+          <text class="title">{{item.companyname}}</text>
+          <text class="desc">{{item.intro}}</text>
+        </view>
+      </view>
+      <image class="arrow" src="/images/activity/ic_arrows.png"></image>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "关联企业主页",
+  "usingComponents": {
+    "create-com": "../../components/create-com/index"
+  }
+}

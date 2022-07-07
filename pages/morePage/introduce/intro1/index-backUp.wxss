@@ -1,0 +1,127 @@
+.header {
+  /* height: 531px; */
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #0C395D;
+  box-sizing: border-box;
+}
+
+.head-hd {
+  height: 22px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 22px;
+}
+
+.head-desc {
+  height: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #52FFFF;
+  text-align: center;
+  line-height: 20px;
+}
+
+.img {
+  width: 345px;
+  display: block;
+  margin: auto;
+}
+
+.header .img {
+  margin-bottom: 18px;
+}
+
+.text {
+  padding: 0 40rpx;
+  text-align: justify;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 2px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #0B2A45;
+}
+
+.img {
+  margin-bottom: 28px;
+}
+
+.desc {
+  position: relative;
+  height: 20px;
+  margin-bottom: 18px;
+  padding-left: 34px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  line-height: 20px;
+}
+
+.desc::before {
+  position: absolute;
+  left: 20px;
+  top: 2px;
+  content: '';
+  display: block;
+  width: 4px;
+  height: 16px;
+  background: #52FFFF;
+}
+
+.section2 {
+  background: #0C395D;
+}
+
+.section3 {
+  background: #0B2A45;
+}
+
+.section4 {
+  background: #0C395D;
+}
+
+.img-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+}
+
+.img-box .imgs {
+  display: block;
+  width: 50%;
+}
+
+.btn-area {
+  padding: 80rpx 40rpx 60rpx;
+}
+
+.to-com {
+  width: 100%;
+  height: 80rpx;
+  border-radius: 44rpx;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  border: 2rpx solid #52FFFF;
+  text-align: center;
+  line-height: 80rpx;
+}

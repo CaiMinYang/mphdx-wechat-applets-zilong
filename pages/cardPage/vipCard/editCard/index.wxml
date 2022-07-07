@@ -1,0 +1,141 @@
+<view class="custom-card-edit">
+  <view class="fileds-list" wx:if="{{frontData.length>0}}">
+    <view class="fields-title">名片正面信息</view>
+    <view class="fields-item {{item.canModify ? '' : 'view-disabled'}}" wx:for="{{frontData}}" wx:key="index" data-index="{{index}}" bindtap="{{item.canModify?item.dataType==1?'':'uploadImg':'disabledFiled'}}" data-type="front">
+      <text class="fields-name">{{item.viewName}}</text>
+      <view class="fields-val-wrap">
+        <block wx:if="{{item.dataType==1}}">
+          <input type="text" class="fields-val-input" placeholder="请输入" disabled="{{!item.canModify}}" data-index="{{index}}" data-type="front" bindinput="bindinput" data-name="{{item.name}}" value="{{item.val}}" />
+        </block>
+        <block wx:else>
+          <block wx:if="{{!item.val}}">
+            <view class="no-img"></view>
+          </block>
+          <image wx:else src="{{item.val}}" class="fields-val-img" catchtap="previewImg" name="{{item.name}}" data-name="{{item.name}}" data-src="{{item.val}}"></image>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="fileds-list" wx:if="{{backData.length>0}}">
+    <view class="fields-title">名片反面信息</view>
+    <view class="fields-item {{item.canModify ? '' : 'view-disabled'}}" wx:for="{{backData}}" wx:key="index" data-index="{{index}}" bindtap="{{item.canModify?item.dataType==1?'':'uploadImg':'disabledFiled'}}" data-type="back">
+      <text class="fields-name">{{item.viewName}}</text>
+      <view class="fields-val-wrap">
+        <block wx:if="{{item.dataType==1}}">
+          <input type="text" class="fields-val-input" placeholder="请输入" disabled="{{!item.canModify}}" data-index="{{index}}" bindinput="bindinput" data-type="back" data-name="{{item.name}}" value="{{item.val}}" />
+        </block>
+        <block wx:else>
+          <block wx:if="{{!item.val}}">
+            <view class="no-img"></view>
+          </block>
+          <image wx:else src="{{item.val}}" class="fields-val-img" catchtap="previewImg" data-name="{{item.name}}" data-src="{{item.val}}"></image>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="fileds-list" wx:if="{{otherData.length>0}}">
+    <view class="fields-title">其他信息</view>
+    <view class="fields-item {{item.canModify ? '' : 'view-disabled'}}" wx:for="{{otherData}}" wx:key="index" data-index="{{index}}" bindtap="{{item.canModify?item.dataType==1?'':'uploadImg':'disabledFiled'}}" data-type="other">
+      <text class="fields-name">{{item.viewName}}</text>
+      <view class="fields-val-wrap">
+        <!--<block wx:if="{{item.dataType==1}}">
+          <input type="text" class="fields-val-input" placeholder="请输入" disabled="{{!item.canModify}}" data-index="{{index}}" data-type="other" bindinput="bindinput" data-name="{{item.name}}" value="{{item.val}}" />
+        </block>
+        <block wx:else>
+          <block wx:if="{{!item.val}}">
+            <view class="no-img"></view>
+          </block>
+          <image wx:else src="{{item.val}}" class="fields-val-img" catchtap="previewImg" data-name="{{item.name}}" data-src="{{item.val}}"></image>
+        </block>-->
+      </view>
+    </view>
+  </view>
+  <view class="fileds-list" wx:if="{{canSelfField}}">
+    <view class="fields-title">自定义信息</view>
+    <view class="fields-item custom" wx:for="{{customData}}" wx:key="index">
+      <view class="left" bindtap="{{item.dataType==1?'':'uploadImg'}}" data-type="custom" data-index="{{index}}">
+        <view class="inner-box">
+          <text class="fields-name">{{item.viewName}}</text>
+          <view class="fields-val-wrap">
+            <block wx:if="{{item.dataType==1}}">
+              <input type="text" class="fields-val-input" placeholder="请输入" data-index="{{index}}" bindinput="bindinput" data-type="custom" data-name="{{item.name}}" value="{{item.val}}" />
+            </block>
+            <block wx:else>
+              <block wx:if="{{!item.val}}">
+                <view class="no-img"></view>
+              </block>
+              <image wx:else src="{{item.val}}" class="fields-val-img" name="{{item.name}}" catchtap="previewImg" data-name="{{item.name}}" data-src="{{item.val}}"></image>
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class="delete-view" bindtap="deleteField" data-index="{{index}}">
+        <image class="delete" src="/images/delete.png"></image>
+      </view>
+    </view>
+    <view class="add-custom" bindtap="addCustom">
+      <image class="add-img" src="/images/add-custom.png"></image> 添加自定义信息
+    </view>
+  </view>
+  <view class="fileds-list">
+    <view class="fields-title">名片隐私设置</view>
+    <view class="fields-item" bindtap="privacy">
+      <text>{{privacyText}}</text>
+      <image class="img-arrow" src="/images/activity/ic_arrows.png"></image>
+    </view>
+    <!-- <view class="fields-item fields-item1" bindtap="othercanshare">
+      <text class="labels">别人能否分享我的名片？</text>
+      <text>{{canshare==1?'可以分享':'不能分享'}}</text>
+      <image class="img-arrow" src="/images/activity/ic_arrows.png"></image>
+    </view> -->
+    <view class="fields-item fields-item1">
+      <picker bindchange="bindPickerChange" style="width:100%;" value="{{canshare}}" range="{{['不可分享','可以分享']}}">
+        <view class="share-word picker">
+          <view class="labels">别人是否可以分享我的名片？</view>
+          <text>{{canshare==1?'可以分享':'不能分享'}}</text>
+          <image class="img-arrow" src="/images/activity/ic_arrows.png"></image>
+        </view>
+      </picker>
+    </view>
+
+  </view>
+  <view class="fileds-list">
+    <view class="fields-title">设置转发话术</view>
+    <textarea class="fields-val-tarea" placeholder="您好，这是我的数字名片，请惠存！" bindinput="bindtarea" value="{{forwardingScript}}" />
+  </view>
+
+  <!-- <view class="delete-btn" bindtap="deleteCard">
+    删除该名片
+  </view> -->
+  <view class="save-wrap">
+    <button type="button" class="save-btn" style="background: {{skin}};" bindtap="submitdata">提交</button>
+  </view>
+</view>
+
+<view class="add-modal" hidden="{{addHidden}}">
+  <view class="moda-mask"></view>
+  <view class="content">
+    <view class="body">
+      <view class="modal-hd">自定义字段设置</view>
+      <view class="modal-field">字段类型</view>
+      <radio-group class="group" bindchange="radioChange">
+        <label class="label">
+          <radio class="radio" value="1" checked="{{customDataType=='1'}}" />
+          <text>文字</text>
+        </label>
+        <label>
+          <radio class="radio" value="2" checked="{{customDataType=='2'}}" />
+          <text>图片</text>
+        </label>
+      </radio-group>
+      <view class="modal-field">字段名称</view>
+      <view class="modal-input">
+        <input class="inputs" type="text" maxlength="20" value="{{customViewName}}" bindinput="modalInput" placeholder="输入字段名称，如网址、微信等" />
+      </view>
+      <view class="action">
+        <view class="cancel" bindtap="cancel">取消</view>
+        <view class="confirm" bindtap="confirm">确定</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="main1">
+    <view class="bgImg1"></view>
+    <text  class="title1">企业数字身份管理专家</text>
+    <text  class="content1">一张数字名片连接企业所有，员工数字名片可继承使用，名片永不丢失，客户永不迷路</text>
+  </view>
+  <view class="main2">
+    <view class="frame1">
+     <view class="title2">名片自定义链接企业需求 </view>
+     <view class="bgImg2"></view>
+     <text  class="content2">链接企业的视频，文档、主页、活动，会议，展会、招商、招聘，动态，荣誉，产品服务等。动态连接，实时更新，永不丢失……</text>
+  </view>
+</view>
+  <view class="main3">
+    <view class="frame2">
+      <view class="title3">转发分享你的数字名片</view>
+      <view class="bgImg3"></view>
+      <view class="content3">基子12亿个人微信及企业微信生态分享朋友圈，转发好友，微信群，公众号&菜单等。线下通过扫码方式识别使用。</view>
+    </view>
+  </view>
+  <view class="main4">
+     <view class="frame3">
+       <view class="title4">自动跟踪及智能分析</view>
+       <view class="bgImg4"></view>
+  
+     </view>
+     <view class="content4">智能雷达自动跟踪访客抓取用户行为轨迹，无需添加微信在线沟通交流，实时统计分析，智能测算销售线索……</view>
+  </view>
+  <view class="main5">
+     <view class="frame4">
+       <view class="title5">快速 友好 强大</view>
+       <view class="bgImg5"></view>
+       <button bindtap="startCards" class="button1"><text class="buttonContent">企业免费试用</text></button>
+     </view>
+  </view>
+</view>
